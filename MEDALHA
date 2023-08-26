@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{   float nota1,nota2,nota3,media;
+    char medalha;
+
+    cout<<"informe o primeira nota (0-10.0):";
+    cin>>nota1;
+    cout<<"informe o segunda nota (0-10.0):";
+    cin>>nota2;
+    cout<<"informe o terceira nota (0-10.0):";
+    cin>>nota3;
+    cout<<"Tem medalha? 'S' para sim 'N' para nao:";
+    cin>>medalha;
+
+    media = (nota1+nota2+nota3)/3;
+     if((media>=6) || (medalha == 'S')){
+
+         cout<<"\nAprovado";
+         cout<<"\nParabens";
+
+     }
+     else {
+         cout<<"Reprovado\n";
+         cout<<"Lascou!!!\n";
+
+     }
+
+         cout<<"\nmedia = "<<media;
+}
+
